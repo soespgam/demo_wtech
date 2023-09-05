@@ -1,23 +1,34 @@
 <div class="container-fluid">
     <nav class=" row navbar navbar-light navbar-expand-md " style="background-color: #1A5276;">
-        <div class="col-5 navbar-text">
-            <a class="" href="#"><img
-                    src="https://repository.unad.edu.co/reproductor-ova/10596_36477/template/images/logoUNAD.png"
-                    width="100" height="70" alt="" style="max-width: 100%; height: auto;"></a>
-        </div>
-        <div class="col-2 btnmenu">
+        <div class="col-1 btnmenu">
             <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" style="
             color: white" aria-controls="offcanvasExample">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
-        <div class="col-5 navbar-text txTittle1">
+        <div class="col-3 navbar-text">
+            <a class="divCenter" href="#"><img
+                    src="https://repository.unad.edu.co/reproductor-ova/10596_36477/template/images/logoUNAD.png"
+                    width="100" height="70" alt="" style="max-width: 100%; height: auto;"></a>
+        </div>
+        
+        <div class="col-8 navbar-text txTittle1">
             Proyecto Demo
         </div>
     </nav>
 </div>
 
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+<div class="offcanvas offcanvas-start containerMenu" tabindex="-1" id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header row">
+        <div class="col-7">
+            <a class="" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Logo_unad.png"
+                    width="100%" height="70%" alt="" style="max-width: 100%; height: auto;"></a>
+        </div>
+        <div class="col-5">
+            <button type="button" class="btn-close btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+    </div>
     <div class="offcanvas-body">
         <ul class="list-unstyled ps-0">
             <li *ngFor="let item of menuItems">
@@ -37,8 +48,5 @@
                 </div>
             </li>
         </ul>
-    </div>
-    <div class="offcanvas-header">
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
 </div>
