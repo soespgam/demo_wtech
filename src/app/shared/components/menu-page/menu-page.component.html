@@ -1,0 +1,20 @@
+<div class="containerMenu" id="menuLat">
+    <ul class="list-unstyled ps-0">
+        <li *ngFor="let item of menuItems">
+            <button class="btn btn-toggle align-items-center  collapsed" data-bs-toggle="collapse"
+                data-bs-target="#home-collapse" aria-expanded="true" style="
+                    width: 100%;">
+                {{item.titulo}}
+            </button>
+            <div class="collapse show" id="home-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-n ormal pb-1 small list-group">
+                    <li class="list-group-item  list-group-item-action nav-item" data-bs-toggle="list" href="#"
+                        role="tab" *ngFor="let itemSub of item.submenu">
+                        <a (click)="redirecTo(itemSub.url)" class="nav-link"
+                            style="cursor: pointer;">{{itemSub.titulo}}</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>

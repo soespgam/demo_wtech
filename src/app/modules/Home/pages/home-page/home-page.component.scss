@@ -1,0 +1,19 @@
+/* .txTittle1{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+ */
+.layout {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+}
