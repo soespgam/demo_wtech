@@ -8,12 +8,12 @@ export class SidebarService {
   menu: any[] = [{
     titulo: 'Introduccion',
     submenu: [
-      { titulo: 'Actividad 1', url: '/Home/conceptual_map' },
-      { titulo: 'Actividad 2', url: '/Home/option_multiple' }
+      { titulo: 'Actividad 1', url: '/conceptual_map' },
+      { titulo: 'Actividad 2', url: '/option_multiple' }
     ]
   }, {
     titulo: 'Explicacion',
     submenu: [
-      { titulo: 'Explicacion 1', url: '/Home/Explication' }]
+      { titulo: 'Explicacion 1', url: '/explication' }]
   }]
 }

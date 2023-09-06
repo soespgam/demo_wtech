@@ -13,7 +13,6 @@ export class MenuPageComponent implements OnInit {
 
   constructor( private sideBarService:SidebarService , private router:Router){
     this.menuItems = this.sideBarService.menu;
-    console.log(this.menuItems);
   }
 
 

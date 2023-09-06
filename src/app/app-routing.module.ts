@@ -7,29 +7,14 @@ import { OptionMultipleComponent } from './modules/introduction/pages/option-mul
 
 const routes: Routes = [
   {
-    path: 'Home',
-    component: HomePageComponent,
-    children: [{
-      path: 'Explication',
-      component: ExplicationPageComponent
-    }, {
-      path: 'conceptual_map',
-      component: ConceptualMapPageComponent
-    },
-    {
-      path: 'option_multiple',
-      component: OptionMultipleComponent
-    }
+    path:'',
+    component:HomePageComponent,
+    children:[
+      {path: 'explication',component: ExplicationPageComponent},
+      {path: 'conceptual_map',component: ConceptualMapPageComponent},
+      {path: 'option_multiple',component: OptionMultipleComponent},
+      {path: '',redirectTo: 'home', pathMatch: 'full'}
     ]
-  },
-  {
-    path: 'home',
-    component: HomePageComponent,
-  }
-  , {
-    path: '',
-    redirectTo: '/home',
-    pathMatch: 'full',
   }
 ];
 
